@@ -1,0 +1,206 @@
+.content button {
+    background-color: #64CCC5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('photo.avif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    -webkit-filter: blur(1px);
+}
+
+
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content {
+    margin: 10px;
+    width: 300px;
+    background-color: #ffffff33;
+    backdrop-filter: blur(15px);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word; 
+
+}
+
+nav {
+    background-color: #ffffff33;
+    
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+}
+
+
+.navbar-nav .nav-link {
+    color: white;
+}
+.container {
+padding: 40px;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-self: auto;
+position: relative;
+text-align: center;
+color: white;
+overflow: hidden;
+border-radius: 30px;
+
+height: 300px;
+width: 100000px;
+
+}
+
+.centered {
+position: absolute;
+}
+
+
+
+.main {
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.abc {
+text-align: center;
+text-transform: uppercase;
+color: #f1faee;
+font-size: 4rem;
+}
+
+.roller {
+height: 4.125rem;
+line-height: 4rem;
+position: relative;
+overflow: hidden;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: 7B66FF;
+}  
+#spare-time {
+font-size: 1rem;
+font-style: italic;
+letter-spacing: 1rem;
+margin-top: 0;
+color: 7B66FF;
+}
+
+.roller #rolltext {
+position: absolute;
+top: 0;
+animation: slide 5s infinite;
+}
+
+@keyframes slide {
+0% {
+    top: 0;
+}
+25% {
+    top: -4rem;
+}
+50% {
+    top: -8rem;
+}
+72.5% {
+    top: -12.25rem;
+}
+}
+
+@media screen and (max-width: 600px) {
+.abc {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1faee;
+    font-size: 2.125rem;
+}
+.roller {
+    height: 2.6rem;
+    line-height: 2.125rem;
+}
+#spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+.roller #rolltext {
+    animation: slide-mob 5s infinite;
+}
+@keyframes slide-mob {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -2.125rem;
+    }
+    50% {
+        top: -4.25rem;
+    }
+    72.5% {
+        top: -6.375rem;
+    }
+}
+}
+.servh,
+    .servc {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .c1,
+.c2 {
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
