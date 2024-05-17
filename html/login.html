@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Wave</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+nav {
+    background-color: #ffffff33;
+    
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+}
+
+
+.navbar-nav .nav-link {
+    color: white;
+}
+   
+   
+    
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      border: 7px solid rgba(0, 0, 0, 0); 
+    background: rgba(119, 20, 20, 0.15); 
+     backdrop-filter: blur(10px);
+      padding: 20px;
+      z-index: 9999;
+      color: #eeeeee;
+    }
+    
+   
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #64ccc5;
+      color: #053b50;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #053b50;
+      color: #ffffff;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    button[type="submit"] {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .forgot-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me label {
+  margin-left: 5px;
+}
+
+.forgot-remember a {
+  color: #19b1e4;
+  text-decoration: none;
+}
+
+.forgot-remember a:hover {
+  text-decoration: underline;
+}
+
+ 
+    .close {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 24px;
+      color: #eeeeee;
+      cursor: pointer;
+    }
+    
+    
+    h1,
+    p {
+      text-align: center;
+      color: #053b50;
+    }
+   
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #64CCC5;"><b>WEATHER WAVE</b></a>
+     
+  </div>
+</nav> <br>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+<body style="background: linear-gradient(135deg, #053b50, #176b87, #64ccc5, #eeeeee); height: 100vh; overflow: hidden;"></body>
+
+
+<div id="loginPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="loginForm">
+      <h2>Login</h2>
+      <form>
+        <label for="loginUsername">Username / Email:</label>
+        <input type="text" id="loginUsername" name="loginUsername" required>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <div class="forgot-remember">
+          <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+          <div class="remember-me">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+          </div>
+        </div>
+        <button onclick="login('index.html')">Login</button>
+      </form>
+    </div>
+    <div id="signupForm" style="display: none;">
+      <h2>Sign Up</h2>
+      <form>
+        <label for="signupUsername">Username/email:</label>
+        <input type="text" id="signupUsername" name="signupUsername" required>
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <button onclick="signup()">Sign Up</button>
+      </form>
+    </div>
+    <p id="switchForm">Don't have an account? <a href="#" onclick="toggleForms()">Sign Up</a></p>
+  </div>
+</div>
+<a href="index.html" id="redirectLink" style="display: none;"></a>
+
+
+<script>function openPopup() {
+  document.getElementById('loginPopup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('loginPopup').style.display = 'none';
+  var redirectAnchor = document.getElementById('redirectLink');
+  redirectAnchor.click();
+}
+
+
+  
+  function toggleForms() {
+    var loginForm = document.getElementById('loginForm');
+    var signupForm = document.getElementById('signupForm');
+    if (loginForm.style.display === 'block') {
+      loginForm.style.display = 'none';
+      signupForm.style.display = 'block';
+      document.getElementById('switchForm').innerHTML = "Already have an account? <a href='#' onclick='toggleForms()'>Login</a>";
+    } else {
+      signupForm.style.display = 'none';
+      loginForm.style.display = 'block';
+      document.getElementById('switchForm').innerHTML = "Don't have an account? <a href='#' onclick='toggleForms()'>Sign Up</a>";
+    }
+  }
+  
+  function login() {
+    
+    alert('Login button clicked (not submitting form for demo)');
+  }
+  
+  function signup() {
+    
+    alert('Signup button clicked (not submitting form for demo)');
+  }
+
+  window.onload = function() {
+    openPopup();
+  }
+  function forgotPassword() {
+  var email = prompt("Please enter your email to reset the password:");
+
+  
+  if (email) {
+    
+    alert("Password reset instructions sent to: " + email);
+  } else {
+    alert("Password reset cancelled.");
+  }
+}
+
+  </script>
+  <script src="script.js"></script>
+</body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+</html>

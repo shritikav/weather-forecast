@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cold Front</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 200vh;
+        background: #053b50;
+        background: linear-gradient(#053b50, #176b87, #64ccc5, #eeeeee);
+      }
+      nav {
+    background-color: #ffffff33;
+    
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+}
+
+      .navbar a {
+        color: white;
+      }
+      .content {
+        margin: 10px;
+        color: white;
+        padding: 10px;
+        text-wrap: wrap;
+        font-size: 20px;
+      }
+      .content li p {
+        margin: 0;
+      }
+      nav {
+            background-color: #ffffff33;
+            backdrop-filter: blur(15px);
+        }
+        
+        
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('https://media.istockphoto.com/id/187113078/photo/cold-front.jpg?s=612x612&w=0&k=20&c=fbNs4p_BpgWQ4IBk3hdLgXqL0Ct1doKLQL72mJobuH0=');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    -webkit-filter: blur(1px);
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #64CCC5;"><b>WEATHER WAVE</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sh.html">Forecast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log.html">Login / Signup</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </body>
+  <div class="background-container"></div>
+
+    <div class="content">
+        <p class="para">
+            A cold front is a meteorological phenomenon that occurs when a mass of cold air moves into an area occupied by warm air. This movement of the cold air displacing the warm air creates a boundary known as a cold front. Cold fronts are significant weather features and often lead to changes in weather conditions.
+        </p>
+        <p class="para">
+            Here's how a cold front forms and what happens when it passes through an area:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    <strong>Formation:</strong> Cold fronts are typically formed when a high-pressure system, associated with cold air, moves into a region occupied by a low-pressure system, associated with warm air. The cold, dense air mass wedges under the lighter warm air, forcing the warm air to rise.
+                </p>
+            </li>
+            <br />
+            <li>
+                <p>
+                    <strong>Weather Changes:</strong> As the warm air rises, it cools and condenses, forming clouds and precipitation. This often results in the development of intense thunderstorms, heavy rain, or even snow showers, depending on the temperature difference between the cold and warm air masses. The weather preceding a cold front is usually warm and humid, while the weather behind the front is colder and drier.
+                </p>
+            </li>
+            <br />
+            <li>
+                <p>
+                    <strong>Wind Shift:</strong> Before a cold front arrives, winds typically come from the warm air mass. As the front passes, the wind direction shifts abruptly and may become gusty. The wind change is often noticeable and can be a warning sign of an approaching cold front.
+                </p>
+            </li>
+        </ol>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

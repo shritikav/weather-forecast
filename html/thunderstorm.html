@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thunderstorm</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 200vh;
+        background: #053b50;
+        background: linear-gradient(#053b50, #176b87, #64ccc5, #eeeeee);
+      }
+      nav {
+    background-color: #ffffff33;
+    
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+}
+
+      .navbar a {
+        color: white;
+      }
+      .content {
+        margin: 10px;
+        color: white;
+        padding: 10px;
+        text-wrap: wrap;
+        font-size: 20px;
+      }
+      .content li p {
+        margin: 0;
+      }
+      nav {
+            background-color: #ffffff33;
+            backdrop-filter: blur(15px);
+        }
+        
+        
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    -webkit-filter: blur(1px);
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #64CCC5;"><b>WEATHER WAVE</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sh.html">Forecast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log.html">Login / Signup</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </body>
+    <div class="background-container"></div>
+    
+
+    <div class="content">
+        <p class="para">
+            A thunderstorm swiftly transforms the sky, as dark clouds converge, signaling the atmospheric symphony about to unfold. Rising warm air gives birth to towering cumulonimbus clouds, setting the stage for nature's dramatic performance. As the storm advances, winds shift, temperatures fluctuate, and the air becomes charged.
+        </p>
+        <p class="para">
+            Here's how a thunderstorms forms and what happens when it passes through an area:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    <strong>Formation:</strong>Warm, moist air rises, cools, and condenses into clouds. As the air continues to ascend, it creates updrafts, leading to the development of towering cumulonimbus clouds. With the right atmospheric conditions, these clouds can evolve into a thunderstorm, marked by lightning, thunder, and precipitation.
+                </p>
+            </li>
+            <br />
+            <li>
+                <p>
+                    <strong>Weather Changes:</strong> A sudden drop in temperature, increasing winds, darkening skies, and a surge in humidity precede the onset of a thunderstorm. The atmosphere becomes charged with electricity, culminating in the dramatic release of energy through lightning and thunder. Heavy rainfall and gusty winds accompany the storm, creating a temporary and intense weather transformation.
+                </p>
+            </li>
+            <br />
+            <li>
+                <p>
+                    <strong>Wind Shift:</strong> As a thunderstorm approaches, winds often shift direction. Initially, warm, moist air is drawn in, but as the storm nears, cooler air rushes outward in downdrafts. This wind shift is indicative of the storm's presence and can bring a sudden change in atmospheric pressure and temperature.
+                </p>
+            </li>
+        </ol>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

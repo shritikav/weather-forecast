@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foggy</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 200vh;
+        background: #053b50;
+        background: linear-gradient(#053b50, #176b87, #64ccc5, #eeeeee);
+      }
+      nav {
+    background-color: #ffffff33;
+    
+    backdrop-filter: blur(15px);
+    
+    border-radius: 10px;
+}
+
+      .navbar a {
+        color: white;
+      }
+      .content {
+        margin: 10px;
+        color: white;
+        padding: 10px;
+        text-wrap: wrap;
+        font-size: 20px;
+      }
+      .content li p {
+        margin: 0;
+      }
+      nav {
+            background-color: #ffffff33;
+            backdrop-filter: blur(15px);
+        }
+        
+        
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-image: url('https://i.pinimg.com/736x/4f/41/cc/4f41cc0b154f5754186b059a3420cbec.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); 
+    -webkit-filter: blur(1px);
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #64CCC5;"><b>WEATHER WAVE</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html">Forecast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sh.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log.html">Login / Signup</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="background-container"></div>
+
+    <div class="content">
+        <p class="para">
+            Foggy" describes a weather condition characterized by the presence of thick fog, which is a collection of tiny water droplets or ice crystals suspended in the air near the ground. Fog reduces visibility, and it often occurs when moist air comes into contact with cooler surfaces, leading to condensation. Foggy conditions can create a misty or hazy atmosphere, making it challenging to see distant objects.
+        </p>
+        <p class="para">
+            Here's how a foggy forms and what happens when it passes through an area:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    <strong>Formation:</strong> Fog forms when moist air cools rapidly, causing water vapor to condense into tiny droplets near the ground. This process occurs when the air temperature reaches the dew point, leading to the creation of a thick mist or fog that reduces visibility.
+                </p>
+            </li>
+            <br />
+            <li>
+                <p>
+                    <strong>Weather Changes:</strong> Foggy weather can lead to reduced visibility and cooler temperatures due to the presence of thick fog. It often creates a misty or hazy atmosphere and may be associated with calm conditions. Foggy weather may persist until the air temperature rises, dissipating the fog or until other weather patterns influence its presence.
+                </p>
+            </li>
+            <br />
+            <li>
+                <p>
+                    <strong>Wind Shift:</strong> Foggy conditions may experience subtle shifts in wind direction, influenced by local atmospheric factors. While fog often occurs in calm conditions, slight changes in wind patterns can impact the distribution and dissipation of fog. Wind shifts can affect visibility and the duration of foggy weather in a given area.
+                </p>
+            </li>
+        </ol>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
